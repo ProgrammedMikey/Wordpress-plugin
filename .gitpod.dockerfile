@@ -17,7 +17,6 @@ RUN git clone https://github.com/luizbills/gitpod-wordpress $HOME/gitpod-wordpre
 
 ### MailHog ###
 USER root
-ARG DEBIAN_FRONTEND=noninteractive
 RUN go get github.com/mailhog/MailHog && \
     go get github.com/mailhog/mhsendmail && \
     cp $GOPATH/bin/MailHog /usr/local/bin/mailhog && \
