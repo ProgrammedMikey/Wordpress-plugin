@@ -1,0 +1,22 @@
+{
+  "elements": {
+    "logoSuperTest": {
+      "settings": {
+        "name": "[Demo] Logo Element",
+        "metaThumbnailUrl": "[publicPath]/logo-element-thumbnail.png",
+        "metaPreviewUrl": "[publicPath]/logo-element-preview.png",
+        "metaDescription": "Widget to display your site logo"
+      },
+      "phpFiles": [
+        "LogoSuperTestShortcodes.php"
+      ]
+    }
+  },
+  "categories": {
+    "Misc": {
+      "elements": [
+        "logoSuperTest"
+      ]
+    }
+  }
+}

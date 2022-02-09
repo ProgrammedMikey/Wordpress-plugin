@@ -1,0 +1,19 @@
+{
+  "elements": {
+    "donutChart": {
+      "settings": {
+        "name": "Donut Chart",
+        "metaThumbnailUrl": "[publicPath]/donut-chart-thumbnail.png",
+        "metaPreviewUrl": "[publicPath]/donut-chart-preview.png",
+        "metaDescription": "A donut chart that displays data with percentage values."
+      }
+    }
+  },
+  "categories": {
+    "Charts": {
+      "elements": [
+        "donutChart"
+      ]
+    }
+  }
+}
