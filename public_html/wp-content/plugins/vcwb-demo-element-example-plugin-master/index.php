@@ -1,6 +1,6 @@
 <?php
 /**
-Plugin Name: VCWB Elements API example
+Plugin Name: VCWB Donut Element API
 Plugin URI: http://visualcomposer.com
 Description: VCWB Elements API example
 Version: 1.0
@@ -20,6 +20,7 @@ add_action(
     'vcv:api',
     function ($api) {
         $elementsToRegister = [
+            'donutElement',
             'logoSuperTest',
             'textTest',
             'imageGalleryWithTestZoom',

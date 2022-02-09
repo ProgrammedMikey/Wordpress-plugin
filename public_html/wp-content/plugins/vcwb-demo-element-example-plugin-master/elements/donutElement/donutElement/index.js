@@ -1,14 +1,14 @@
 /* eslint-disable import/no-webpack-loader-syntax */
-import vcCake from 'vc-cake'
-import VerticalChart from './component'
+import { getService } from 'vc-cake'
+import DonutElement from './component'
 
-const vcvAddElement = vcCake.getService('cook').add
+const vcvAddElement = getService('cook').add
 
 vcvAddElement(
   require('./settings.json'),
   // Component callback
-  (component) => {
-    component.add(VerticalChart)
+  function (component) {
+    component.add(DonutElement)
   },
   // css settings // css for element
   {

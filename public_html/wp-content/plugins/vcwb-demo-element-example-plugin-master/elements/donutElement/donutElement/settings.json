@@ -2,7 +2,7 @@
   "tag": {
     "access": "protected",
     "type": "string",
-    "value": "donutChart"
+    "value": "donutElement"
   },
   "relatedTo": {
     "type": "group",
@@ -42,16 +42,19 @@
       "value": [
         {
           "title": "HTML",
-          "value": 90,
+          "text" : "$140000",
+          "value": 70,
           "backgroundColor": "#C45959"
         },
         {
           "title": "CSS",
-          "value": 80,
+          "text" : "$11000",
+          "value": 15,
           "backgroundColor": "#C45959"
         },
         {
           "title": "JavaScript",
+          "text" : "$11000",
           "value": 75,
           "backgroundColor": "#C45959"
         }
@@ -68,6 +71,15 @@
           "value": "Chart bar",
           "options": {
             "label": "Title",
+            "dynamicField": true
+          }
+        },
+        "text": {
+          "type": "string",
+          "access": "public",
+          "value": "Donut chart",
+          "options": {
+            "label": "Text",
             "dynamicField": true
           }
         },
@@ -98,10 +110,11 @@
           }
         },
         "_paramGroupEditFormTab1": {
-          "type": "group",
+          "type": "group", 
           "access": "protected",
           "value": [
             "title",
+            "text",
             "value",
             "backgroundColor"
           ],

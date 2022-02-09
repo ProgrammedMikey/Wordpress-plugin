@@ -1,7 +1,8 @@
 {
   "name": "vcwb",
   "version": "dev",
-  "description": "Visual Composer Element",
+  "license": "SEE LICENSE IN <https://visualcomposer.com/terms-of-use/>",
+  "description": "Visual Composer Website Builder",
   "main": "index.php",
   "repository": {
     "type": "git",
@@ -9,12 +10,13 @@
   },
   "scripts": {
     "standard": "standard --version && standard",
-    "build": "webpack --version && webpack --config=./node_modules/vc-webpack-vendors/webpack.config.js",
-    "build-production": "webpack --version && webpack --config=./node_modules/vc-webpack-vendors/webpack.config.production.js -p",
-    "watch": "webpack --version && webpack --config=./node_modules/vc-webpack-vendors/webpack.config.js --watch"
+    "build": "webpack --version && webpack --config=./node_modules/vc-webpack-vendors/webpack.v4.config.js --progress --colors",
+    "build-production": "webpack --version && webpack --config=./node_modules/vc-webpack-vendors/webpack.v4.config.production.js -p",
+    "watch": "webpack --version && webpack --config=./node_modules/vc-webpack-vendors/webpack.v4.config.js --progress --colors --watch"
   },
   "devDependencies": {
-    "vc-webpack-vendors": "3.0.5"
+    "vc-webpack-vendors": "2.8.1",
+    "standard": "14.3.4"
   },
   "babel": {
     "presets": [
@@ -42,17 +44,17 @@
     }
   },
   "resolutions": {
-    "core-js": "3.18.2",
-    "postcss": "8.3.9",
-    "css-loader": "6.3.0",
+    "core-js": "3.2.1",
+    "postcss": "7.0.32",
+    "css-loader": "4.2.2",
     "color-name": "1.1.4",
-    "eslint": "7.32.0",
-    "less": "4.1.2",
-    "raw-loader": "1.0.0",
-    "@babel/runtime": "7.15.4"
+    "eslint": "7.7.0",
+    "less": "3.12.2"
   },
   "browserslist": [
-    "ie >= 11",
-    "last 2 version"
+    ">1%",
+    "ios_saf 8",
+    "ie 10",
+    "ie 11"
   ]
 }
